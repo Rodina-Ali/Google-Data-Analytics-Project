@@ -6,8 +6,8 @@
 - [Recommendations](#recommendations)
 
 ## Project Overview 
-
-This project is part of the Google Data Analytics Certificate, where I analyzed bike-share data for a fictional company, Cyclistic, to understand user behavior and provide business recommendations. The goal is to determine how casual riders can be converted into annual members, using historical ride data.
+---
+This project is part of the **Google Data Analytics Certificate**, where I analyzed bike-share data for a fictional company, *Cyclistic*, to understand user behavior and provide business recommendations. The goal is to determine how casual riders can be converted into annual members, using historical ride data.
 
 ## Data Source
 
@@ -16,8 +16,10 @@ Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data 
 ## Tools 
 
 - SQL Server - Data Cleaning and Data Analysis [Download link here](link)
-- Tableau - Dashboards [Download link here](link)
-
+- Tableau - Dashboards [Download link here](link) 📉 (:)
+  |table|table|
+  |-----|-----|
+  |table|table|
 
 ## Data Cleaning and preparation 
 1. Used SQL Server to clean and merge multiple CSV files.
