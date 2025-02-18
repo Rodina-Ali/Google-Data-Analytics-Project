@@ -9,6 +9,7 @@
 ---
 This project is part of the **Google Data Analytics Certificate**, where I analyzed bike-share data for a fictional company, *Cyclistic*, to understand user behavior and provide business recommendations. The goal is to determine how casual riders can be converted into annual members, using historical ride data.
 
+![Dashboard](Dashboard.png)
 ## Data Source
 
 Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data from the Cyclistic bike-share system.
@@ -31,7 +32,7 @@ Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data 
         -Average ride duration
         -Preferred days & times
         -Ride types (dock stations vs. dockless)
-        [Download link here](link)
+        [Download link here](Cleandata_bike.sql)
 or
         ```SQL
         Select from table
