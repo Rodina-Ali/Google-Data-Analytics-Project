@@ -1,0 +1,43 @@
+--create a table to combine all tables in
+CREATE TABLE trips (
+    ride_id VARCHAR(255),
+    rideable_type VARCHAR(50),
+    start_time DATETIME,
+    end_time DATETIME,
+    start_station_name VARCHAR(255),
+    start_station_id VARCHAR(50),
+    end_station_name VARCHAR(255),
+    end_station_id VARCHAR(50),
+    start_lat FLOAT,
+    start_lng FLOAT,
+    end_lat FLOAT,
+    end_lng FLOAT,
+    member_casual VARCHAR(50)
+)
+
+
+-- join all tables using union 
+INSERT INTO trips
+SELECT * FROM tripsjan
+UNION
+SELECT * FROM tripsfeb
+UNION
+SELECT * FROM tripsmar
+UNION
+SELECT * FROM tripsapr
+UNION
+SELECT * FROM tripsmay
+UNION
+SELECT * FROM tripsjun
+UNION
+SELECT * FROM tripsjul
+UNION
+SELECT * FROM tripsaug
+UNION
+SELECT * FROM tripssep
+UNION
+SELECT * FROM tripsoct
+UNION
+SELECT * FROM tripsnov
+UNION
+SELECT * FROM tripsdec
