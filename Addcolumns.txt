@@ -1,0 +1,26 @@
+--add column to calculate ride length
+ALTER TABLE trips
+ADD ride_length INT
+UPDATE trips
+SET ride_length = DATEDIFF(MINUTE, start_time, end_time)
+
+
+
+--extract month name
+ALTER TABLE trips
+ADD months varchar(50)
+UPDATE trips
+SET months = DATENAME(MONTH, start_time)
+
+--extract day name
+ALTER TABLE trips
+ADD days varchar(50)
+UPDATE trips
+SET days = DATENAME(WEEKDAY, start_time)
+
+
+--add hour 
+ALTER TABLE trips
+ADD hour_of_day Int
+UPDATE trips
+SET hour_of_day = DATEPART(HOUR, start_time)
