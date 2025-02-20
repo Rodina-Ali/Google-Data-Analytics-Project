@@ -1,4 +1,6 @@
-# 🚴‍♂️Cyclistic Bike-Share Analysis
+<img src="logo.png" alt="Logo" width="75">  
+
+# Cyclistic Bike-Share Analysis
 
 ## Table of Contents
 
