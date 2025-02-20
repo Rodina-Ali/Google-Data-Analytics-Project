@@ -1,0 +1,31 @@
+--check which ride_id has duplicates
+SELECT 
+  ride_id,
+  COUNT(*) AS count_of_ride_id
+FROM trips
+GROUP BY ride_id
+HAVING COUNT(*) > 1;
+
+--check for any null 
+SELECT 
+    SUM(CASE WHEN ride_id IS NULL THEN 1 ELSE 0 END) AS ride_id_nulls,
+    SUM(CASE WHEN rideable_type IS NULL THEN 1 ELSE 0 END) AS rideable_type_nulls,
+    SUM(CASE WHEN start_time IS NULL THEN 1 ELSE 0 END) AS start_time_nulls,
+    SUM(CASE WHEN end_time IS NULL THEN 1 ELSE 0 END) AS end_time_nulls,
+    SUM(CASE WHEN start_station_name IS NULL THEN 1 ELSE 0 END) AS start_station_name_nulls,
+    SUM(CASE WHEN start_station_id IS NULL THEN 1 ELSE 0 END) AS start_station_id_nulls,
+    SUM(CASE WHEN end_station_name IS NULL THEN 1 ELSE 0 END) AS end_station_name_nulls,
+    SUM(CASE WHEN end_station_id IS NULL THEN 1 ELSE 0 END) AS end_station_id_nulls,
+    SUM(CASE WHEN start_lat IS NULL THEN 1 ELSE 0 END) AS start_lat_nulls,
+    SUM(CASE WHEN start_lng IS NULL THEN 1 ELSE 0 END) AS start_lng_nulls,
+    SUM(CASE WHEN end_lat IS NULL THEN 1 ELSE 0 END) AS end_lat_nulls,
+    SUM(CASE WHEN end_lng IS NULL THEN 1 ELSE 0 END) AS end_lng_nulls,
+    SUM(CASE WHEN member_casual IS NULL THEN 1 ELSE 0 END) AS member_casual_nulls
+FROM trips
+
+--removing unwanted columns too many null values 
+ALTER TABLE trips
+DROP COLUMN start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng
+ALTER TABLE trips
+DROP COLUMN ride_id
+
