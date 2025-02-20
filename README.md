@@ -13,31 +13,42 @@ This project is part of the **Google Data Analytics Certificate**, where I analy
 ## Data Source
 
 Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data from the Cyclistic bike-share system.
+| Column Name          | Data Type       |
+|----------------------|----------------|
+| ride_id             | VARCHAR(255)    |
+| rideable_type       | VARCHAR(50)     |
+| start_time         | DATETIME        |
+| end_time           | DATETIME        |
+| start_station_name | VARCHAR(255)    |
+| start_station_id   | VARCHAR(50)     |
+| end_station_name   | VARCHAR(255)    |
+| end_station_id     | VARCHAR(50)     |
+| start_lat         | FLOAT           |
+| start_lng         | FLOAT           |
+| end_lat           | FLOAT           |
+| end_lng           | FLOAT           |
+| member_casual     | VARCHAR(50)     |
 
 ## Tools 
-
-- SQL Server - Data Cleaning and Data Analysis [Download link here](link)
-- Tableau - Dashboards [Download link here](link) 📉 (:)
-  |table|table|
-  |-----|-----|
-  |table|table|
+- SQL Server - Data Cleaning and Data Analysis as the data combined is more than 1 million [Click to preview]()
+- Tableau - Dashboards [Click to preview](https://github.com/Rodina-Ali/Google-Data-Analytics-Project/blob/main/Dashboard.png?raw=true) 
 
 ## Data Cleaning and preparation 
-1. Used SQL Server to clean and merge multiple CSV files.
-2. Removed duplicate records, null values, and inconsistent data.
-3. Converted timestamps to extract ride duration, day of the week, and time of ride.
+1. Used SQL Server to clean and merge multiple CSV files. [Click to preview](Combinefiles.txt)
+2. Removed duplicate records, null values, and inconsistent data. [Click to preview](Cleandata.txt)  
+3. Converted timestamps to extract ride duration, day of the week, hour of the day, and months. [Click to preview](Addcolumns.txt)
 
 ##  Exploratory Data Analysis (EDA)
 -Compared casual riders vs. annual members based on:
+        -Count of riders
+        
+        -Preferred days & times
+        -Ride types (dock stations vs. dockless)
         -Average ride duration
         -Preferred days & times
         -Ride types (dock stations vs. dockless)
         [Download link here](Cleandata_bike.sql)
-or
-        ```SQL
-        Select from table
-        where 
-        ```
+
         Visualized key trends using R/Python & Tableau.
 
 ## Key Insights & Recommendations
