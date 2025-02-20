@@ -1,0 +1,47 @@
+--member vs casual
+SELECT
+COUNT(rideable_type) AS number_of_people, member_casual
+FROM trips
+GROUP BY 
+member_casual
+
+--rideable types by member
+SELECT
+COUNT (*) AS number_of_riders, rideable_type, member_casual
+FROM trips
+GROUP BY 
+rideable_type,
+member_casual
+ORDER BY  number_of_riders DESC 
+
+--Number of rides by months member vs casual 
+--Here we can see both ride more during summer season
+SELECT COUNT(*) AS number_of_riders, months, member_casual
+FROM trips
+group by
+months, member_casual
+order by number_of_riders DESC
+
+--Number of rides by day of the week member vs casual 
+--here we can see members are using it more in the weekdays while casual more in the weekends
+SELECT COUNT(*) AS number_of_riders, days, member_casual
+FROM trips
+group by
+days, member_casual
+order by number_of_riders DESC
+
+--Number of rides by hour of the day member vs casual 
+--we can assume that member use it to commute to work wile casual within the day
+SELECT COUNT(*) AS number_of_riders, hour_of_day, member_casual
+FROM trips
+group by
+hour_of_day, member_casual
+order by number_of_riders DESC
+
+--average ride length member vs casual
+--casual tend to use bikes longer than member
+SELECT 
+AVG(ride_length) AS average_ride_length, member_casual
+FROM trips
+GROUP BY member_casual
+ORDER BY average_ride_length DESC
