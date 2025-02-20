@@ -9,7 +9,6 @@
 ---
 This project is part of the **Google Data Analytics Certificate**, where I analyzed bike-share data for a fictional company, *Cyclistic*, to understand user behavior and provide business recommendations. The goal is to determine how casual riders can be converted into annual members, using historical ride data.
 
-![Dashboard](Dashboard.png)
 ## Data Source
 
 Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data from the Cyclistic bike-share system.
@@ -30,7 +29,7 @@ Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data 
 | member_casual     | VARCHAR(50)     |
 
 ## Tools 
-- SQL Server - Data Cleaning and Data Analysis as the data combined is more than 1 million [Click to preview]()
+- SQL Server - Data Cleaning and Data Analysis as the data combined is more than 1 million. [Click to preview](Cleandata_bike.sql)
 - Tableau - Dashboards [Click to preview](https://github.com/Rodina-Ali/Google-Data-Analytics-Project/blob/main/Dashboard.png?raw=true) 
 
 ## Data Cleaning and preparation 
@@ -39,17 +38,33 @@ Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data 
 3. Converted timestamps to extract ride duration, day of the week, hour of the day, and months. [Click to preview](Addcolumns.txt)
 
 ##  Exploratory Data Analysis (EDA)
--Compared casual riders vs. annual members based on:
-        -Count of riders
-        
-        -Preferred days & times
-        -Ride types (dock stations vs. dockless)
-        -Average ride duration
-        -Preferred days & times
-        -Ride types (dock stations vs. dockless)
-        [Download link here](Cleandata_bike.sql)
+-Compared casual riders vs. annual members based on: [Click to preview analysis](Analyisdata.txt)  
 
-        Visualized key trends using R/Python & Tableau.
+-Count of riders 
+<p align="center">
+    <img src="Overall.png" width="500" height="300">
+</p>
+
+-By Month
+<p align="center">
+    <img src="Bymonth.png" width="500" height="300">
+</p>
+
+-Preferred days & times
+<p align="center">
+    <img src="Byday.png" width="500" height="300">
+    <img src="Byhour.png" width="500" height="300">
+</p>
+
+-By ride length
+<p align="center">
+    <img src="Byridelength.png" width="500" height="300">
+    <img src="Byridetype.png" width="500" height="300">
+</p>
+
+      
+Visualized key trends using Tableau.
+ [Click to preview](https://github.com/Rodina-Ali/Google-Data-Analytics-Project/blob/main/Dashboard.png?raw=true) 
 
 ## Key Insights & Recommendations
 
