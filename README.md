@@ -20,6 +20,7 @@ This project is part of the **Google Data Analytics Certificate**, where I analy
 ## Data Source
 
 Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data from the Cyclistic bike-share system.
+
 | Column Name          | Data Type       |
 |----------------------|----------------|
 | ride_id             | VARCHAR(255)    |
@@ -47,11 +48,11 @@ Downloaded datasets from Divvy Trip Data. That contained 12 months of ride data 
 
 ##  Exploratory Data Analysis (EDA)
 -Compared casual riders vs. annual members based on: [Click to preview analysis](Analyisdata.txt)  
- - **Count of riders:**
- - **By Month:**
- - **Preferred days & times:**
- - **By ride length:**
- - **By ride Type:**
+ - **Count of riders**
+ - **By Month**
+ - **Preferred days & times**
+ - **By ride length**
+ - **By ride Type**
  - 
 - **Count of riders:**
 <p align="center">
