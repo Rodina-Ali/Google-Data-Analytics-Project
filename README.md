@@ -83,10 +83,10 @@ The analysis reveals that casual ridership is highly seasonal, with a significan
     - Members primarily ride on weekdays during peak commuting hours (7 AM – 9 AM & 5 PM – 7 PM).
     - Afternoon rides (12 PM – 5 PM) are the most popular time for casual users, suggesting recreational use.
     - Rides for both casual riders and members decline after 5 PM.
-<div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="Byday.png" width="500" height="300">
-    <img src="Byhour.png" width="500" height="300">
-</div>
+<p align="center">
+    <img src="Byday.png" width="400" height="300">
+    <img src="Byhour.png" width="400" height="300">
+</p>
 
 4. **Ride Length:**
     - Casual riders take significantly longer rides, averaging 25 minutes, compared to 12 minutes for members.
