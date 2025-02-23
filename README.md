@@ -1,8 +1,9 @@
-# Cyclistic Bike-Share Analysis
-<img src="logo.png" alt="Logo" width="75"> 
+# <img src="logo.png" align="left" width="70" height="70"> Cyclistic Bike-Share Analysis
 
 
-## Project Background
+
+
+## 📝Project Background
 ---
 Cyclistic is a bike-share company operating in a metropolitan area, aiming to increase annual memberships by understanding user behavior. This analysis explores ride trends, identifies key differences between casual riders and members, and provides actionable recommendations to boost membership conversions.
 
@@ -24,7 +25,8 @@ Targeted SQL queries regarding various business questions can be found [here](An
 
 An interactive Tableau dashboard used to report and explore ride trends can be found [here](Dashboard.png).
 
-## Data Structure
+
+## 🗄️Data Structure
 ---
 Downloaded 12 months of ride data from Divvy Trip Data, with each month's data stored in separate files from the Cyclistic bike-share system.
 All CSV files share the same structure. The SQL queries that were used to merge these files into a single table can be found [here](Combinefiles.txt).
@@ -46,42 +48,45 @@ All CSV files share the same structure. The SQL queries that were used to merge 
 | end_lng           | FLOAT           |
 | member_casual     | VARCHAR(50)     |
 
-## Executive Summary
+
+## 🔑Executive Summary
 ---
 Overview of Findings
 The analysis reveals that casual ridership is highly seasonal, with a significant increase in warmer months, whereas members ride consistently throughout the year. Peak usage times differ, with casual riders being more active on weekends and members using the service primarily during weekday commute hours. Ride length also varies, as casual riders tend to take significantly longer trips than members, indicating a more recreational usage pattern. Additionally, electric bikes are slightly more popular than classic bikes among both groups, and there is potential to promote electric scooters, as casual riders show a small but notable interest in them. These insights can help shape marketing strategies, fleet distribution, and pricing models to optimize engagement and revenue.
 
 ![Dashboard](Dashboard.png)
 
-## Insights Deep Dive
----
-1. Total Count of Riders
 
+## 📊Insights Deep Dive
+---
+1. **Total Count of Riders:**
     - Casual riders account for approximately 40% of total rides, while members contribute 60% of all trips.
       Analysis: Despite fewer casual riders, they make up a significant portion of overall usage, highlighting a key opportunity for membership growth.
     <p align="center">
     <img src="Overall.png" width="500" height="300">
 </p>
 
-2. Monthly Trends
+
+2. **Monthly Trends:**
     - The busiest months are May to September, Casual ridership experiences a significant increase, while member usage also rises but at a more moderate pace.
     - Members and Casuals ridership decline sharply in winter (December-February), dropping by more than double compared to peak summer months.
     - Promotions or discounts in colder months could help stabilize ridership.
    <p align="center">
     <img src="Bymonth.png" width="500" height="300">
 </p>
+
       
-3. Preferred Days & Times
+3. **Preferred Days & Times:**
     - Casual riders are most active on weekends, with a noticeable rise in rides on both Saturday and Sunday.
     - Members primarily ride on weekdays during peak commuting hours (7 AM – 9 AM & 5 PM – 7 PM).
     - Afternoon rides (12 PM – 5 PM) are the most popular time for casual users, suggesting recreational use.
     - Rides for both casual riders and members decline after 5 PM.
-   <p align="center">
+<div style="display: flex; justify-content: center; gap: 10px;">
     <img src="Byday.png" width="500" height="300">
     <img src="Byhour.png" width="500" height="300">
-   </p>
+</div>
 
-4. Ride Length
+4. **Ride Length:**
     - Casual riders take significantly longer rides, averaging 25 minutes, compared to 12 minutes for members.
     - Casual users take more exploratory rides, while members use bikes for short-distance commutes.
     - The difference in ride length suggests that casual riders could be incentivized with time-based promotions.
@@ -89,7 +94,8 @@ The analysis reveals that casual ridership is highly seasonal, with a significan
     <img src="Byridelength.png" width="500" height="300">
 </p>
 
-6. Ride Type
+
+6. **Ride Type:**
     - Both members and casual riders prefer electric bikes, but the difference in usage between electric and classic bikes is minimal, with only a slight gap of around 2%.
     - Electric scooters account for only about 1% of total rides for both members and casual riders, with casual users having a slightly higher usage than members.
     - The demand for electric bikes has grown steadily among members, suggesting a need for fleet expansion.
@@ -98,7 +104,8 @@ The analysis reveals that casual ridership is highly seasonal, with a significan
     <img src="Byridetype.png" width="500" height="300">
 </p>
 
-## Recommendations
+
+## 💡Recommendations
 ---
 Based on the insights and findings above, we recommend that the Cyclistic Marketing Team consider the following actions to increase membership conversions and optimize bike usage:
 
@@ -121,7 +128,7 @@ Based on the insights and findings above, we recommend that the Cyclistic Market
    **Recommendation:** Complete missing station data to improve analysis accuracy. Conduct a detailed study to pinpoint high-traffic stations for each group. Leverage this data to implement location-based advertising and introduce weekend pass incentives near popular casual rider stations, encouraging higher engagement and conversions.
 
 
-## Assumptions and Caveats
+## ⚠️Assumptions and Caveats
 ---
 Throughout this analysis, multiple assumptions were made to address data challenges and ensure consistency. The following assumptions and limitations should be considered:
 
