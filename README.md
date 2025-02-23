@@ -19,6 +19,8 @@ Insights and recommendations are provided on the following key Comparisons Casua
    
    📌 Ride Type: Examined the most commonly used bike types by each group.
 
+The finalized SQL script is available [here](Finaldata_bike.sql).
+
 The SQL queries used to inspect and clean the data for this analysis can be found [here](Cleandata.txt).
 
 Targeted SQL queries regarding various business questions can be found [here](Analyisdata.txt).
